@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="carzso" />
+        <meta name="keywords" content="carzso" />
+        <meta name="author" content="carzso" />
+        <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+        <title>carzso</title>
+        <!-- Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css" />
+        <!-- ico-font-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css" />
+        <!-- Themify icon-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css" />
+        <!-- Flag icon-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css" />
+        <!-- Feather icon-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css" />
+        <!-- Plugins css start-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/dropzone.css" />
+        <!-- Plugins css Ends-->
+        <!-- Plugins css start-->
+
+        <!-- Bootstrap css-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css" />
+        <!-- App css-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+        <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen" />
+        <!-- Responsive css-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css" />
+        <!-- Custom css-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/custom.css" />
+    </head>
+    <body>
+        <!-- tap on top starts-->
+        <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+        <!-- tap on tap ends-->
+        <!-- page-wrapper Start-->
+        <div class="page-wrapper compact-wrapper" id="pageWrapper">
+            <!-- Page Header Start-->
+            <div class="page-header">
+                <div class="header-wrapper row m-0">
+                    <form class="form-inline search-full col" action="#" method="get">
+                        <div class="form-group w-100">
+                            <div class="Typeahead Typeahead--twitterUsers">
+                                <div class="u-posRelative">
+                                    <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Cuba .." name="q" title="" autofocus />
+                                    <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div>
+                                    <i class="close-search" data-feather="x"></i>
+                                </div>
+                                <div class="Typeahead-menu"></div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="header-logo-wrapper col-auto p-0">
+                        <div class="logo-wrapper">
+                            <a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt="" /></a>
+                        </div>
+                        <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+                    </div>
+                    <div class="left-header col horizontal-wrapper ps-0">
+                        &nbsp;
+                    </div>
+                    <div class="nav-right col-8 pull-right right-header p-0">
+                        <ul class="nav-menus">
+                            <li class="maximize">
+                                <a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a>
+                            </li>
+                            <li class="profile-nav onhover-dropdown p-0 me-0">
+                                <div class="media profile-media">
+                                    <img class="b-r-10" src="../assets/images/dashboard/profile.jpg" alt="" />
+                                    <div class="media-body">
+                                        <span>Super Admin</span>
+                                        <p class="mb-0 font-roboto">Admin <i class="middle fa fa-angle-down"></i></p>
+                                    </div>
+                                </div>
+                                <ul class="profile-dropdown onhover-show-div">
+                                    <li>
+                                        <a href="#"><i data-feather="log-out"> </i><span>Log out</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header Ends-->
+            <!-- Page Body Start-->
+            <div class="page-body-wrapper">
+                <!-- Page Sidebar Start-->
+                <div class="sidebar-wrapper">
+                    <div>
+                        <div class="logo-wrapper">
+                            <a href="#"><img class="img-fluid logo-img for-light" src="../assets/images/logo/login.svg" alt="" /><img class="img-fluid for-dark logo-img" src="../assets/images/logo/login.svg" alt="" /></a>
+                            <div class="back-btn"><i class="fa fa-angle-left"></i></div>
+                            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
+                        </div>
+                        <div class="logo-icon-wrapper">
+                            <a href="#"><img class="img-fluid" src="../assets/images/logo/logo-icon.svg" alt="" /></a>
+                        </div>
+
+                        <nav class="sidebar-main">
+                            <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                            <div id="sidebar-menu">
+                                <ul class="sidebar-links" id="simple-bar">
+                                    <li class="back-btn">
+                                        <a href="#"><img class="img-fluid" src="../assets/images/logo/logo-icon.svg" alt="" /></a>
+                                        <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                                    </li>
+                                    <li class="sidebar-list">
+                                        <a class="sidebar-link" href="#"><i data-feather="home"></i><span class="lan-6">Dashboard</span></a>
+                                    </li>
+                                    <li class="sidebar-main-title">
+                                        <div>
+                                            <h6 class="lan-1">Inventory</h6>
+                                            <p class="lan-2">Cars,VR,Categories &amp;Inspection...</p>
+                                        </div>
+                                    </li>
+                                     <li class="sidebar-list">
+                                        <a class="sidebar-link" href="publishCar.html"><i class="icofont icofont-car-alt-1 f-20  m-r-10"></i><span class="lan-6">Publish Cars</span></a>
+                                    </li>
+                                    <li class="sidebar-list">
+                                        <a class="sidebar-link" href="carInventory.html"><i class="fa fa-taxi m-r-10"></i><span class="lan-6">Car Inventory</span></a>
+                                    </li>
+                                    <li class="sidebar-list">
+                                        <a class="sidebar-link" href="cars.html"><i class="fa fa-taxi m-r-10"></i><span class="lan-6">Cars</span></a>
+                                    </li>
+                                    <li class="sidebar-list">
+                                    <a class="sidebar-link" href="Workshop.html"><i class="fa fa-gears m-r-10"></i><span class="lan-6">Workshop</span></a>
+                                    </li>
+                                    <li class="sidebar-list">
+                                        <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Procurement</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                                        <ul class="sidebar-submenu" style="display: none;">
+                                            <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Lead Assignment</a></li>
+                                            <li><a href="lead-conversion-list.html" data-bs-original-title="" title="">Lead Conversion</a></li>
+                                            <li><a href="procurement-list.html" data-bs-original-title="" title="">Procurement List</a></li>
+                                            <li><a href="inspection-list.html" data-bs-original-title="" title="">Inspection</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Page Sidebar Ends-->
+                <div class="page-body">
+                    <div class="container-fluid">
+                        <div class="page-title p-2">
+                            <div class="row">
+                                <div class="col-6">
+                                    &nbsp;
+                                    <!-- <h3>Makes</h3> -->
+                                </div>
+                                <div class="col-6">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html"> <i data-feather="home"></i></a>
+                                        </li>
+                                        <li class="breadcrumb-item">Cars</li>
+                                        <li class="breadcrumb-item">Add Car</li>
+                                        <li class="breadcrumb-item active">VR</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Container-fluid starts-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <div class="card">
+
+                                     <div class="list-group-item badge-light b-r-7 mb-0 m-4 p-3">
+                                        <div class="row">
+                                            <div class="col text-center"><h6 class="mb-0">MS002334</h6>ID</div>
+                                             <div class="col text-center"><h6 class="mb-0">Maruti</h6>Make</div>
+                                             <div class="col text-center"><h6 class="mb-0">Swift Dezire</h6>Car Name</div>
+                                              <div class="col text-center"><h6 class="mb-0">ZXI</h6>Variant</div>
+                                              <div class="col text-center"><h6 class="mb-0">2016</h6>Model</div>
+
+                                            
+                                        </div>
+                                    </div>
+                                     <div class="text-center p-4 pb-1 pt-3">
+                                       
+                                       <button onclick="location.href = 'add-cars.html';" class="btn btn-outline-primary mb-1" type="button" ><i class="icofont icofont-car-alt-1 f-20 "></i></button>  
+                                       
+                                         
+                                <button onclick="location.href = 'add-images.html';" class="btn btn-outline-primary mb-1" type="button">+ Images</button>
+                                 <button onclick="location.href = 'add-price.html';" class="btn btn-outline-primary mb-1" type="button" disabled="">+ Price</button>
+                                            <button onclick="location.href = 'add-vr.html';" class="btn btn-outline-primary mb-1" type="button">+ VR</button>
+                                           
+                                           <button onclick="location.href = 'refurbhis.html';" class="btn btn-outline-primary mb-1" type="button">+ Refurbhis</button>
+                                            <button onclick="location.href = 'ShowroomOwnership.html';" class="btn btn-outline-primary mb-1" type="button">+ Showroom/Ownership</button>
+                                              <button onclick="location.href = 'inspection.html';" class="btn btn-outline-primary mb-1" type="button">+ Inspection</button>
+                                            </div> 
+
+                                    
+                                    <div class="card-header pt-3 pb-3 border-0">
+                                        <h5>Price Details</h5>
+                                    </div>
+
+
+
+                                    
+                                    <div class="card-body pt-0">
+                                        <div class="row">
+                                              
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Buying Price</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Price" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Refurbishment Cost</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="20,000" aria-describedby="" required="" data-bs-original-title="" title="" disabled="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Other Cost</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Price" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Selling Margin</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">%</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Enter Details" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-lg-12 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Other Descriptions</label>
+                                                    <textarea class="form-control" id=" " placeholder="Enter Address"></textarea>
+                                                </div>
+                                            </div>
+
+                                              <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Selling Cost</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Price" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Paid</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Price" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                             <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Pending</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Rs.</span></div>
+                                                        <input class="form-control" id="" type="number" placeholder="Price" aria-describedby="" required="" data-bs-original-title="" title="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                              <div class="col-lg-12 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Descriptions</label>
+                                                    <textarea class="form-control" id=" " placeholder="Enter Address"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="col-12 mt-3 text-right">
+                                            
+                                            
+                                            <button class="btn btn-primary text-white" type="button" data-bs-original-title="" title="">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Container-fluid Ends-->
+                </div>
+                <!-- footer start-->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 footer-copyright text-center">
+                                <p class="mb-0">Copyright 2022 © Carzso</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- latest jquery-->
+        <script src="../assets/js/jquery-3.5.1.min.js"></script>
+        <!-- Bootstrap js-->
+        <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- feather icon js-->
+        <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
+        <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+        <!-- scrollbar js-->
+        <script src="../assets/js/scrollbar/simplebar.js"></script>
+        <script src="../assets/js/scrollbar/custom.js"></script>
+        <!-- Sidebar jquery-->
+        <script src="../assets/js/config.js"></script>
+        <!-- Plugins table start-->
+        <script src="../assets/js/dropzone/dropzone.js"></script>
+        <script src="../assets/js/dropzone/dropzone-script.js"></script>
+
+        <!-- Plugins JS start-->
+        <script src="../assets/js/sidebar-menu.js"></script>
+        <script src="../assets/js/tooltip-init.js"></script>
+        <!-- Plugins JS Ends-->
+        <!-- Theme js-->
+        <!-- <script src="../assets/js/script.js"></script> -->
+        <!--  <script src="../assets/js/theme-customizer/customizer.js"></script> -->
+        <!-- login js-->
+        <!-- Plugin used-->
+    </body>
+</html>

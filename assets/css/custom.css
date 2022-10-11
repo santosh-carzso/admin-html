@@ -1,0 +1,401 @@
+.login-card {
+  background: transparent !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+
+.show-hide span {
+  color: #F25682 !important;
+}
+
+img.logo-img {
+  max-width: 70% !important;
+}
+
+.dataTables_length {
+  /*display: none;*/
+  margin: 0 0 10px 0px !important;
+}
+
+.dataTables_filter {
+  float: none;
+  margin: 0 0 10px 0px !important;
+}
+
+.mr-2 {
+  margin-right: 15px !important;
+}
+
+.custom-card .card,
+.custom-card .card button,
+.custom-card .card-body {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.custom-card .card button,
+.custom-card .card-body {
+  padding: 10px 0 !important;
+}
+
+.customt-hd .card-header {
+  padding: 0px 0 !important;
+}
+
+.custom-card button.clrtxt {
+  background: #FFF0F4;
+  color: #F25682 !important;
+  text-indent: 15px;
+}
+
+
+.f1 .f1-steps .f1-step {
+  position: relative;
+  float: left;
+  width: 16.25%;
+  text-align: center;
+}
+
+.f1 .f1-steps .f1-step p {
+  margin-top: 5px;
+  color: #898989;
+  line-height: 1.2;
+}
+
+.f1 .f1-steps .f1-step .f1-step-icon {
+  padding: 10px;
+}
+
+.f1 .f1-steps .f1-step.active .f1-step-icon {
+  line-height: 27px;
+}
+
+.f1 .f1-steps .f1-progress .f1-progress-line {
+  width: 10%;
+}
+
+.trash-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  top: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: #F25682 !important;
+  font-size: 20px;
+  z-index: 3;
+}
+
+td.act-btn a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+td.act-btn .btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+table.filter-table {
+  table-layout: fixed;
+}
+
+table.filter-table td {
+  vertical-align: middle;
+  border: none !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+table.filter-table td.chkbox {
+  padding: 0;
+  width: 40px;
+  text-align: center;
+}
+
+table.filter-table .checkbox label::before {
+  margin: 0;
+}
+
+
+table.invt-table th,
+table.invt-table td {
+  white-space: nowrap;
+}
+
+table.invt-table td div {
+  white-space: normal;
+}
+
+table.invt-table th.sorting_asc:first-child:before {
+  display: none !important;
+}
+
+table.invt-table th.sorting_asc:first-child:after {
+  display: none !important;
+}
+
+table.invt-table th.sorting:last-child:before {
+  display: none !important;
+}
+
+table.invt-table th.sorting:last-child:after {
+  display: none !important;
+}
+
+table.invt-table th.sorting:last-child {
+  text-align: center !important;
+}
+
+table.invt-table thead>tr>th.sorting {
+  padding-right: 40px;
+}
+
+.tooltip .tooltip-inner {
+  background: #000;
+  color: #fff;
+}
+
+.bs-tooltip-top .tooltip-arrow::before {
+
+  border-top-color: #000 !important;
+}
+
+.seo-cont small {
+
+  color: #989898;
+}
+
+ul.color-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.color-list li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  vertical-align: middle;
+  margin: 0px auto;
+}
+
+ul.color-list li.red {
+  background: #790604;
+}
+
+ul.color-list li.gray {
+  background: #989999;
+}
+
+ul.color-list li.silver {
+  background: #d8d8d8;
+}
+
+table.dataTable thead tr th {
+  vertical-align: top !important;
+}
+
+table.dataTable thead tr th li {
+  display: none;
+}
+
+/*table.dataTable thead tr th, table.dataTable thead tr td{ white-space: nowrap; }*/
+table.dataTable thead tr th.sorting,
+table.dataTable thead tr th.sorting_asc,
+table.dataTable thead tr th.sorting_desc {
+  padding-right: 50px;
+}
+
+table.dataTable thead tr th:first-child.sorting,
+table.dataTable thead tr th:first-child.sorting_asc,
+table.dataTable thead tr th:first-child.sorting_desc {
+  padding-right: 0px;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+  top: 12px !important;
+}
+
+.btn-outline-primary {
+  border-color: #F25682 !important;
+  color: #F25682 !important;
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+  color: white !important;
+  background-color: #F25682 !important;
+  border-color: #F25682 !important;
+}
+
+
+.car-slide-cont .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+
+.car-slide-cont .owl-carousel span {
+  font-size: 20px;
+}
+
+.car-slide-cont .owl-carousel .owl-nav button {
+  padding: 4px 10px !important;
+  margin-bottom: 10px;
+}
+
+.car-slide-cont .current img {
+  border: 2px solid #F25682;
+}
+
+.view-label {
+  color: #F25682 !important;
+}
+
+/* Image Sequences Category Page Style */
+input.w50px {
+  width: 50px;
+}
+
+.bg-light-pink {
+  background-color: #FFF0F4 !important;
+}
+
+#accordionISCategory button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#accordionISCategory button {
+  font-weight: 700;
+  color: #2c323f;
+  font-family: Roboto;
+}
+
+#accordionISCategory .accordion-button::after {
+  display: none;
+}
+
+#accordionISCategory .accordion-body.card-body {
+  padding: 0 !important;
+}
+
+#accordionISCategory input,
+#accordionISCategory input:focus {
+  border: 1px solid #2c323f !important;
+  box-shadow: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+#accordionISCategory input.error {
+  border: 1px solid #f00 !important;
+}
+
+#accordionISCategory label.error {
+  display: none !important;
+}
+
+#accordionISCategory input.error,
+#accordionISCategory label.error {
+  margin: 0 !important;
+}
+
+.mandFields-text {
+  font-size: 12px;
+  color: #F25682;
+}
+
+/* Specs and Features Control Panel all pages */
+.card .card-body input.form-control {
+  font-size: 14px;
+}
+
+/*------------------------------------------------
+	[ ## IMS Page ]
+------------------------------------------------*/
+input#registration_number {
+  text-transform: uppercase;
+}
+
+.contact-form-fields .plusNineOne {
+  left: 1px;
+  top: 1px;
+  font-size: 16px;
+  height: calc(100% - 2px);
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fcfcfc;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.contact-form-fields .contact-number-in input#contact_no {
+  padding-left: 70px;
+}
+
+@media screen and (min-width:992px) {
+  .fixed-lead-details {
+    top: 80px;
+    z-index: 999;
+    left: 300px;
+    width: calc(100% - 320px);
+    background-color: #f8f8f8;
+  }
+
+  .nocard-lg {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .card.mt-carlead {
+    margin-top: 225px;
+  }
+
+  .bg-f8 {
+    background-color: #f8f8f8;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .fixed-lead-details {
+    position: relative !important;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width:575px) {
+  .btn-group .btn,
+  .btn {
+    padding: 0.25rem 1.25rem;
+  }
+  .link-btn-wrapper{
+    flex-direction: column-reverse;
+  }
+  .link-btn-wrapper .link-grp{
+    margin-top: 8px;
+
+  }
+}
