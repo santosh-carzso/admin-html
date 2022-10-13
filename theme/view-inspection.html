@@ -28,9 +28,9 @@
         <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
         <!-- Plugins css Ends-->
         <!-- Plugins css start-->
-
         <!-- Bootstrap css-->
         <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
         <!-- App css-->
         <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
         <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen" />
@@ -139,6 +139,12 @@
                                         <a class="sidebar-link" href="Workshop.html"><i class="fa fa-gears m-r-10"></i><span class="lan-6">Workshop</span></a>
                                     </li>
                                     <li class="sidebar-list">
+                                        <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Marketing</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                                        <ul class="sidebar-submenu" style="display: none;">
+                                            <li><a href="procurement-lead-list.html" data-bs-original-title="" title="">Procurement Lead</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-list">
                                         <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Procurement</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                                         <ul class="sidebar-submenu" style="display: none;">
                                             <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Lead Assignment</a></li>
@@ -176,15 +182,54 @@
                     <!-- Container-fluid starts-->
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-md-12">
                                 <div class="card">
+                                    <div class="list-group-item badge-light b-r-7 mb-0 m-4 p-3">
+                                        <div class="row">
+                                            <div class="col text-center"><h6 class="mb-0">Inspection ID</h6>12345</div>
+                                            <div class="col text-center"><h6 class="mb-0">Procurement ID</h6>12345</div>
+                                            <div class="col text-center"><h6 class="mb-0">Make</h6>Maruti</div>
+                                            <div class="col text-center"><h6 class="mb-0">Model</h6>2016</div>
+                                            <div class="col text-center"><h6 class="mb-0">Variant</h6>ZXI</div>
+                                            <div class="col text-center"><h6 class="mb-0">Make Year</h6>2015</div>
+                                        </div>
+                                    </div>
                                     <div class="card-header pb-3 border-0">
                                         <h5>View Inspection</h5>
                                     </div>
                                     <div class="card-body pt-0">
                                         <div class="row">
                                             <div class="col-100">
-                                                <h6 class="f-w-500 m-b-10">Lead Details</h6>
+                                                <h6> Inspection Images <a href="inspection-image.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                            </div>
+                                            <div class="col">
+                                                <div class="pb-3 car-slide-cont">
+                                                    <div class="product-slider owl-carousel owl-theme" id="sync1">
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/01.jpg" alt=""><span class="f-20">Front</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/02.jpg" alt=""><span class="f-20">Left Side</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/03.jpg" alt=""><span class="f-20">Rear</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/04.jpg" alt=""><span class="f-20">Right Side</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/05.jpg" alt=""><span class="f-20">Interior</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/06.jpg" alt=""><span class="f-20">Engine</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/07.jpg" alt=""><span class="f-20">Meter</span></div>
+                                                        <div class="item text-center"><img src="../assets/images/ecommerce/08.jpg" alt=""><span class="f-20">Back</span></div>
+                                                    </div>
+                                                    <div class="owl-carousel owl-theme" id="sync2">
+                                                        <div class="item"><img src="../assets/images/ecommerce/01.jpg" alt=""><span class="f-14">Front</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/02.jpg" alt=""><span class="f-14">Left Side</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/03.jpg" alt=""><span class="f-14">Rear</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/04.jpg" alt=""><span class="f-14">Right Side</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/05.jpg" alt=""><span class="f-14">Interior</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/06.jpg" alt=""><span class="f-14">Engine</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/07.jpg" alt=""><span class="f-14">Meter</span></div>
+                                                        <div class="item"><img src="../assets/images/ecommerce/08.jpg" alt=""><span class="f-14">Back</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-100">
+                                                <h6 class="f-w-500 m-b-10">Inspection Details <a href="edit-inspection.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
                                             </div>
   
                                             <div class="col-md-6">
@@ -275,7 +320,126 @@
                                                 <div class="col">Data</div>
                                                 </div>
                                             </div>
-                                        </div> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-100">
+                                                <h6 class="f-w-500 m-b-10">Inspection Report <a href="inspection-report.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <table class="table table-hover table-dashed">
+                                                    <tr>
+                                                        <th>Reports Name</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Report 1
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="../assets/images/ecommerce/01.jpg" target="_blank"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Report 2
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="../assets/images/ecommerce/01.jpg" target="_blank"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Report 3
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="../assets/images/ecommerce/01.jpg" target="_blank"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Report 4
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="../assets/images/ecommerce/01.jpg" target="_blank"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Report 5
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="../assets/images/ecommerce/01.jpg" target="_blank"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Video Name</strong></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Inspection Video 1
+                                                        </td>
+                                                        <td>
+                                                            <a class="mr-2 d-inline-block" href="#"><i class="fa fa-cloud-download f-24 middle"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-100">
+                                                <h6 class="f-w-500 m-b-10">OEM Report <a href="oem-inspection.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="table-responsive">
+                                                   <table class="table table-hover table-dashed">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>KM Driven</th>
+                                                                <th>Date Time</th>
+                                                                <th>Major Accidental</th>
+                                                                <th>Original RC</th>
+                                                                <th>Hypothication</th>
+                                                                <th>Insurance</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Data1</td>
+                                                                <td>Data2</td>
+                                                                <td>Data3</td>
+                                                                <td>Data4</td>
+                                                                <td>Data5</td>
+                                                                <td>Data6</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-100">
+                                                <h6 class="f-w-500 m-b-10">Status </h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <!-- <label class="form-label view-label mb-0">Status</label> -->
+                                                    <div class="col">New</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <div class="mb-0">
+                                                    <a class="mr-2 px-3 btn btn-primary text-white" href="#">Accept</a>            
+                                                    <a class="px-3 btn btn-outline-primary" href="#">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -317,6 +481,8 @@
         <!-- Plugins JS start-->
         <script src="../assets/js/sidebar-menu.js"></script>
         <script src="../assets/js/tooltip-init.js"></script>
+        <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+        <script src="../assets/js/ecommerce.js"></script>
         <!-- Plugins JS Ends-->
         <!-- Theme js-->
         <!-- <script src="../assets/js/script.js"></script> -->

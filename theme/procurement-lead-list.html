@@ -24,8 +24,8 @@
         <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css" />
         <!-- Plugins css start-->
         <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css" />
-        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/dropzone.css" />
         <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css" />
         <!-- Plugins css Ends-->
         <!-- Plugins css start-->
 
@@ -127,16 +127,14 @@
                                      <li class="sidebar-list">
                                         <a class="sidebar-link" href="publishCar.html"><i class="icofont icofont-car-alt-1 f-20  m-r-10"></i><span class="lan-6">Publish Cars</span></a>
                                     </li>
-
                                     <li class="sidebar-list">
                                         <a class="sidebar-link" href="carInventory.html"><i class="fa fa-taxi m-r-10"></i><span class="lan-6">Car Inventory</span></a>
                                     </li>
-
                                     <li class="sidebar-list">
                                         <a class="sidebar-link" href="cars.html"><i class="fa fa-taxi m-r-10"></i><span class="lan-6">Cars</span></a>
                                     </li>
-                                    <li class="sidebar-list">
-                                        <a class="sidebar-link" href="Workshop.html"><i class="fa fa-gears m-r-10"></i><span class="lan-6">Workshop</span></a>
+                                     <li class="sidebar-list">
+                                    <a class="sidebar-link" href="Workshop.html"><i class="fa fa-gears m-r-10"></i><span class="lan-6">Workshop</span></a>
                                     </li>
                                     <li class="sidebar-list">
                                         <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Marketing</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
@@ -173,8 +171,8 @@
                                         <li class="breadcrumb-item">
                                             <a href="index.html"> <i data-feather="home"></i></a>
                                         </li>
-                                        <li class="breadcrumb-item">Cars</li>
-                                        <li class="breadcrumb-item active">Add Car</li>
+                                        
+                                        <li class="breadcrumb-item">Car Leads</li>
                                     </ol>
                                 </div>
                             </div>
@@ -183,183 +181,69 @@
                     <!-- Container-fluid starts-->
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-lg-12">
                                 <div class="card">
-                                    <div class="card-header pb-3 border-0">
-                                        <h5>Car Details</h5>
-                                       
-                                    </div>  <div class="card-body pt-2">
+                                    
 
+                                     <div class="card-header pb-2 border-0">
+                                        <div class="row m-0">
+                                            <div class="col-8 p-0"> 
+                                                <h5>Car Leads</h5>
+                                            </div>
+                                            <div class="col-4 text-right p-0 pb-3"> 
+                                                <button onclick="location.href = 'add-car-lead.html';" class="btn btn-primary " type="button">+ Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body pt-0">
+                                         <div class="table-responsive product-table">
+                                            <!-- table start -->
+                                            <div class="table-responsive product-table">
+                                                <table class="row-border dataTable" id="basic-1">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Date</th>
+                                                        <th>Tele Caller</th>
+                                                        <th>Customer Name</th>
+                                                        <th>Mobile Number</th>
+                                                        <th>Make</th>
+                                                        <th>Model</th>
+                                                        <th>Variant</th>
+                                                        <th>Kilometer Driven</th>
+                                                        <th>Mfg. Year</th>
+                                                        <th>RTO</th>
+                                                        <th>Status</th>
+                                                        <th width="100">Action</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Data1</td>
+                                                        <td>Data2</td>
+                                                        <td>Data3</td>
+                                                        <td>Data4</td>
+                                                        <td>Data5</td>
+                                                        <td>Data6</td>
+                                                        <td>Data7</td>
+                                                        <td>Data8</td>
+                                                        <td>Data9</td>
+                                                        <td>Data10</td>
+                                                        <td>Data11</td>
+                                                        <td>
+                                                          <a class="mr-2" href="view-car-lead.html"><i data-feather="eye"></i></a>
+                                                          <a class="mr-2" href="#"><i data-feather="edit-2"></i></a> 
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
                                   
-                                        <div class="row">
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Car Name</label>
-                                                    <input class="form-control" id="" type="text" placeholder="Enter name" />
-                                                </div>
+                                                </table>
                                             </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Make</label>
-                                                    <select class="form-select digits" id="">
-                                                        <option>Maruti</option>
-                                                        <option>Mahindera</option>
-                                                        <option>Tata</option>
-                                                        <option>Renault</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                               <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlSelect9">Make Year </label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Select</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlSelect9">Model</label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Select</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Variant</label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Select</option>
-                                                        <option>va1</option>
-                                                        <option>va2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-100">
-                                                <h6 class="f-w-500 m-b-10">Registration</h6>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlSelect9">Registration Year </label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Select</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                         
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlSelect9">State</label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Haryana</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlSelect9">RTO City</label>
-                                                    <select class="form-select digits" id="exampleFormControlSelect9">
-                                                        <option>Gurugram</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Registration Number</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text" id="">HR26</span></div>
-                                                        <input class="form-control" id="" type="number" placeholder="Enter details" aria-describedby="" required="" data-bs-original-title="" title="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-100">
-                                                <h6 class="f-w-500 m-b-10">Insurance Details</h6>
-                                            </div>
-
-                                                <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Type</label>
-                                                    <select class="form-select digits" id="">
-                                                        <option>Haryana</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                              <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Agency</label>
-                                                    <select class="form-select digits" id="">
-                                                        <option>Haryana</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                               <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Valid UPTO </label>
-                                            <div class="input-group">
-                                            <input class="datepicker-here form-control digits" type="text" placeholder="dd/mm/yyyy" data-language="en">
-                                                </div>
-                                                </div>
-                                            </div>
-
-                                           
-                                            <div class="col-100">
-                                                <h6 class="f-w-500 m-b-10">Pre Owned Car Details</h6>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">Kilometer</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Km</span></div>
-                                                        <input class="form-control" id="validationDefaultUsername" type="number" placeholder="Distance" aria-describedby="" required="" data-bs-original-title="" title="" />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="">No. of owners</label>
-                                                    <select class="form-select digits" id="">
-                                                        <option>Select</option>
-                                                        <option>Ist</option>
-                                                        <option>IInd</option>
-                                                    </select>
-                                                </div>
-                                            </div>
- 
+                                            <!-- table End -->
                                         </div>
 
-                                        <div class="col-12 mt-3 text-right">
-                                            <button onclick="location.href = 'add-images.html';" class="btn btn-primary text-white" type="button" data-bs-original-title="" title="">Save & Next</button>
-                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -391,12 +275,13 @@
         <script src="../assets/js/scrollbar/custom.js"></script>
         <!-- Sidebar jquery-->
         <script src="../assets/js/config.js"></script>
-        <!-- Plugins table start-->
-        <script src="../assets/js/dropzone/dropzone.js"></script>
-        <script src="../assets/js/dropzone/dropzone-script.js"></script>
+        <!-- Plugins  start-->
         <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
         <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
         <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+
+        <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+        <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
 
         <!-- Plugins JS start-->
         <script src="../assets/js/sidebar-menu.js"></script>
