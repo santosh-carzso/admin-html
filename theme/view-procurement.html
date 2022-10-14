@@ -147,10 +147,10 @@
                                     <li class="sidebar-list">
                                         <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Procurement</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                                         <ul class="sidebar-submenu" style="display: none;">
-                                            <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Lead Assignment</a></li>
-                                            <li><a href="lead-conversion-list.html" data-bs-original-title="" title="">Lead Conversion</a></li>
+                                            <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Leads</a></li>
                                             <li><a href="procurement-list.html" data-bs-original-title="" title="">Procurement List</a></li>
                                             <li><a href="inspection-list.html" data-bs-original-title="" title="">Inspection</a></li>
+                                            <li><a href="assessment-list.html" data-bs-original-title="" title="">Assessment</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -324,11 +324,18 @@
                                                   <label class="form-label view-label">Remarks</label>
                                                   <div class="col">---</div>
                                                 </div>
-                                            </div>                
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                  <label class="form-label view-label">Procurement Status</label>
+                                                  <div class="col">---</div>
+                                                </div>
+                                            </div>
                                             
 
                                             <div class="col-100 my-3">
-                                                <h6 class="f-w-500 m-b-10">Inspection Details <a href="edit-inspection.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                                <h6 class="f-w-500 m-b-10">Inspection Details <a href="view-inspection.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
@@ -336,16 +343,15 @@
                                                        <table class="table table-hover table-dashed ">
                                                             <thead>
                                                                 <tr>
+                                                                    <th>Inspection Id</th>
                                                                     <th>Procurement Id</th>
-                                                                    <th>Lead Id</th>
-                                                                    <th>Tale Caller</th>
+                                                                    <th>Assign To</th>
+                                                                    <th>Location</th>
+                                                                    <th>Tentative Date Time</th>
+                                                                    <th>Inspection Report</th>
+                                                                    <th>Inspection Image</th>
+                                                                    <th>OEM</th>
                                                                     <th>Status</th>
-                                                                    <th>Current State</th>
-                                                                    <th>Inspection</th>
-                                                                    <th>Assessment</th>
-                                                                    <th>Procurement Offer</th>
-                                                                    <th>Procurement</th>
-                                                                    <th>Procurement Doc.</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -359,10 +365,6 @@
                                                                     <td>Data7</td>
                                                                     <td>Data8</td>
                                                                     <td>Data9</td>
-                                                                    <td>
-                                                                        Data10
-                                                                        <!-- <a href="" data-bs-original-title="" title=""><i class="fa fa-cloud-download f-28 "></i></a> -->
-                                                                    </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -370,11 +372,40 @@
                                                 </div>
                                             </div>
                                             
-                                            <!-- <div class="col-100 my-3">
-                                                <h6 class="f-w-500 m-b-10">Assessment Details <a href="#"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                            <div class="col-100 my-3">
+                                                <h6 class="f-w-500 m-b-10">Assessment Details <a href="view-assessment.html"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                       <table class="table table-hover table-dashed ">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Assessment Id</th>
+                                                                    <th>Procurement Id</th>
+                                                                    <th>Status</th>
+                                                                    <th>Assign To</th>
+                                                                    <th>Assessment Report</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Data1</td>
+                                                                    <td>Data2</td>
+                                                                    <td>Accepted</td>
+                                                                    <td>Santosh Kumar</td>
+                                                                    <td>
+                                                                        <a class="mr-2" href="../assets/images/ecommerce/01.jpg" target="_blank" title="View"><i data-feather="eye" class="f-24 middle"></i></a>
+                                                                        <a class="mr-2" href="#" title="Download"><i data-feather="download" class="f-24 middle"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="col-100 my-3">
+                                            <!-- <div class="col-100 my-3">
                                                 <h6 class="f-w-500 m-b-10">Procurement Offer Details <a href="#"><i class="fa fa-pencil f-20 middle m-l-10"></i></a></h6>
                                             </div>
 

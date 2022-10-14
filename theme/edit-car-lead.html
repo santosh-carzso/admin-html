@@ -173,7 +173,7 @@
                                         <li class="breadcrumb-item">
                                             <a href="index.html"> <i data-feather="home"></i></a>
                                         </li>
-                                        <li class="breadcrumb-item">View Car Lead</li>
+                                        <li class="breadcrumb-item">Edit Car Lead</li>
                                     </ol>
                                 </div>
                             </div>
@@ -183,203 +183,298 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-8 offset-md-2">
-                                <div class="card">
-                                    <div class="card-header border-0">
-                                        <h5>View Car Lead</h5>
+                                <div class="row">
+                                    <div class="col-lg-12 position-fixed fixed-lead-details pb-4">
+                                        <div class="card nocard-lg mb-0 shadow-none">
+                                            <div class="row">
+                                                <div class="col-lg-12 rounded-3 text-lg-dark text-right py-lg-3 bg-f8 px-4 d-none d-lg-block page-title">
+                                                    <ol class="breadcrumb">
+                                                        <li class="breadcrumb-item">
+                                                            <a href="index.html"> <i data-feather="home"></i></a>
+                                                        </li>
+                                                        <li class="breadcrumb-item">Edit Car Lead</li>
+                                                    </ol>
+                                                </div>
+                                                <div class="col-lg-12 rounded-3 text-lg-dark py-lg-3 bg-white px-4 pt-3">
+                                                    <div class="row">
+                                                        <div class="col-100">
+                                                            <h6 class="f-w-500 m-b-10">Lead Details</h6>
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Name</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Contact No.</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Car Location</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Make</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Model</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Varient</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">Manufacturing Year</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <div class="mb-3">
+                                                            <label class="form-label view-label mb-0">RTO State</label>
+                                                            <div class="col"> --- </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card-body pt-0">
+                                </div>
+                                <div class="card mt-carlead">
+                                    <div class="card-header pb-3 border-0">
+                                        <h5>Edit Car Lead</h5>
+                                    </div>  
+                                    <div class="card-body pt-2">                  
                                         <div class="row">
                                             <div class="col-100">
                                                 <h6 class="f-w-500 m-b-10">Car Details</h6>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Name</label>
-                                                  <div class="col">Santosh</div>
-                                                </div>
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="name">Name</label>
+                                                  <input type="text" class="form-control" name="name" id="name" placeholder="Name" maxlength="255" value=""/>
+                                              </div>
                                             </div>
-                
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3 contact-form-fields">
+                                                <label class="form-label" for="contact_no">Contact No.</label>
+                                                <div class="skraftcf-form-control-wrap name contact-number-in position-relative">
+                                                    <!-- <span class="plusNineOne position-absolute">+91</span> -->
+                                                    <input type="text" class="form-control" name="contact_no" id="contact_no" placeholder="Contact No." maxlength="10" value=""/>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="car_location">Car Location</label>
+                                                  <input class="form-control" name="car_location" id="car_location" placeholder="Car Location" maxlength="255" value=""/>
+                                              </div>
+                                            </div>
+
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Contact No.</label>
-                                                  <div class="col">1234567890</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Car Location</label>
-                                                  <div class="col">Ggn</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label view-label">Make</label>
-                                                    <div class="col">Audi</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="mb-3">
-                                                <label class="form-label view-label">Model</label>
-                                                 <div class="col">A3</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="mb-3">
-                                                <label class="form-label view-label">Varient</label>
-                                                 <div class="col">---</div>
+                                                    <label class="form-label" for="">Make</label>
+                                                    <select id="make_id" name="make_id" class="form-select digits">
+                                                    <option value="">--Select Make--</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Base Colors</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="exampleFormControlSelect9">Model</label>
+                                                    <select class="form-select digits" id="model_id" name="model_id">
+                                                        <option value="">Select Model</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Manufacturing Year</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="exampleFormControlInput1">Variant</label>
+                                                    <select class="form-select digits" id="variant_id" name="variant_id">
+                                                        <option value="">Select Variant</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="">Base Colors</label>
+                                                    <input id="base_color" name="base_color" class="form-control" type="text" placeholder="Base Colors" maxlength="100" value=""/>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="make_year">Manufacturing Year </label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="YYYY" data-language="en" name="make_year" id="make_year" autocomplete="off" maxlength="4" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="registration_year">Registration Year </label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="YYYY" data-language="en" name="registration_year" id="registration_year"  autocomplete="off" maxlength="4" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="rto_state">RTO State</label>
+                                                  <select class="form-select" id="rto_state" name="rto_state">
+                                                    <option value="">--Select--</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="fuel_type">Fuel Type</label>
+                                                    <select class="form-select " id="fuel_type" name="fuel_type">
+                                                        <option value="">--Select--</option>
+                                                        <option value="petrol">Petrol</option>
+                                                        <option value="diesel">Diesel</option>
+                                                        <option value="cng">CNG</option>
+                                                        <option value="electric">Electric</option>
+                                                        <option value="hybrid">Hybrid</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Registration Year</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="transmission_type">Transmission Type</label>
+                                                    <select class="form-select" id="transmission_type" name="transmission_type">
+                                                        <option value="">--Select--</option>
+                                                        <option value="automatic">Automatic</option>
+                                                        <option value="manual">Manual</option>
+                                                    </select>
                                                 </div>
                                             </div>
+
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">RTO State</label>
-                                                  <div class="col">HR</div>
+                                                    <label class="form-label" for="">Kilometer Driven</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend"><span class="input-group-text" id="">Km</span></div>
+                                                        <input class="form-control" name="kilometers" id="kilometers" type="text" placeholder="Distance" aria-describedby="" data-bs-original-title="" title="" maxlength="15" min="0" value="" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="mb-3">
-                                                <label class="form-label view-label">Fuel Type</label>
-                                                <div class="col">---</div>
-                                                </div>
-                                            </div>
+
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Transmission Type</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="">Owners Sr. No.</label>
+                                                    <select class="form-select digits" name="owner_number" id="owner_number">
+                                                        <option value="">--Select--</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="3">4</option>
+                                                    </select>
                                                 </div>
                                             </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="">Insurance Type</label>
+                                                  <select class="form-select digits" id="insurance_type_id" name="insurance_type_id">
+                                                    <option value="">--Select--</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="customer_demand">Customer Demand</label>
+                                                  <input class="form-control" name="customer_demand" id="customer_demand" placeholder="Customer Demand" maxlength="200" value=""/>
+                                              </div>
+                                            </div>
+
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Kilometer Driven</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="">Registration Number</label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" id="registration_number" name="registration_number" type="text" placeholder="Registration Number" aria-describedby="" data-bs-original-title="" title="" value="" onkeypress="allowAlphaNumeric(event)" />
+                                                    </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="source">Source</label>
+                                                  <select class="form-select" id="source" name="source">
+                                                    <option value="">--Select--</option>
+                                                    <option value="website">Website</option>
+                                                    <option value="campaign">Campaign</option>
+                                                    <option value="reference">Reference</option>
+                                                    <option value="walkin">Walk-In</option>
+                                                    <option value="exchange">Exchange</option>
+                                                    <option value="agent_dealer">Agent Dealer</option>
+                                                    <option value="others">Others</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="ownership-type">Ownership Type</label>
+                                                  <select class="form-select" id="ownership-type" name="ownership-type">
+                                                    <option value="">--Select--</option>
+                                                    <option value="Individual">Individual</option>
+                                                    <option value="Propietorship">Propietorship</option>
+                                                    <option value="Pvt Limited">Pvt Limited</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                              <div class="mb-3">
+                                                  <label class="form-label" for="remarks">Remarks:</label>
+                                                  <textarea class="form-control" name="remarks" id="remarks" cols="30" rows="5"></textarea>
+                                              </div>
+                                            </div>
+
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="mb-3">
-                                                  <label class="form-label view-label">Owners Sr. No.</label>
-                                                  <div class="col">---</div>
+                                                    <label class="form-label" for="">Completed/Incompleted</label>
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <label class="switch">
+                                                                <input type="checkbox" name='status' value="2" checked><span class="switch-state"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Insurance Type</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Customer Demand</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Registration Number</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Source</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Created Date</label>
-                                                  <div class="col">03 Oct 2022</div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Remarks</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-100">
-                                              <h6 class="f-w-500 m-b-10">Lead Details</h6>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Name</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Contact No.</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Car Location</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Make</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Model</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Varient</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Manufacturing Year</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">RTO State</label>
-                                                  <div class="col">---</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-sm-12">
-                                                <div class="mb-3">
-                                                  <label class="form-label view-label">Completed/Incompleted</label>
-                                                  <div class="col">In Progress</div>
-                                                </div>
-                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 mt-3 text-right">
+                                            <button class="btn btn-primary text-white" type="submit" id="btn_submit" data-bs-original-title="" title="">Save</button>
                                         </div>
                                     </div>
                                 </div>

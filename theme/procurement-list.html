@@ -152,10 +152,10 @@
                                     <li class="sidebar-list">
                                         <a class="sidebar-link sidebar-title" href="#" data-bs-original-title="" title=""><i class="fa  fa-taxi  m-r-10"></i><span class="lan-6">Procurement</span><div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
                                         <ul class="sidebar-submenu" style="display: none;">
-                                            <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Lead Assignment</a></li>
-                                            <li><a href="lead-conversion-list.html" data-bs-original-title="" title="">Lead Conversion</a></li>
+                                            <li><a href="lead-assignment-list.html" data-bs-original-title="" title="">Leads</a></li>
                                             <li><a href="procurement-list.html" data-bs-original-title="" title="">Procurement List</a></li>
                                             <li><a href="inspection-list.html" data-bs-original-title="" title="">Inspection</a></li>
+                                            <li><a href="assessment-list.html" data-bs-original-title="" title="">Assessment</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -211,8 +211,8 @@
                                                             <th>Inspection</th>
                                                             <th>Assessment</th>
                                                             <th>Procurement Offer</th>
-                                                            <th>Procurement</th>
-                                                            <th>Procurement Doc.</th>
+                                                            <th>Procurement Cost</th>
+                                                            <th>Procurement Documents</th>
                                                             <th width="100">Action</th>
                                                         </tr>
                                                     </thead>
@@ -256,7 +256,7 @@
                                                             <td>In Progress</td>
                                                             <td>Inspection</td>
                                                             <td><a href="view-inspection.html" title="Completed"><i class="fa fa-check f-24 font-success"></i></a></td>
-                                                            <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
+                                                            <td><button onclick="location.href = 'create-assessment.html';" class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
                                                             <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
                                                             <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
                                                             <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
@@ -281,7 +281,23 @@
                                                                 <a class="px-3 btn btn-outline-primary" href="view-procurement.html">View</a>
                                                             </td>
                                                         </tr>
-                                                        
+                                                        <tr>
+                                                            <td>Data1</td>
+                                                            <td>Data2</td>
+                                                            <td>Data3</td>
+                                                            <td>In Progress</td>
+                                                            <td>Assessment</td>
+                                                            <td><a href="view-inspection.html" title="Completed"><i class="fa fa-check f-24 font-success"></i></a></td>
+                                                            <td><a href="view-assessment.html" title="In Progress"><i class="fa fa-exclamation f-24 font-exclamation"></i></a></td>
+                                                            <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
+                                                            <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
+                                                            <td><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></td>
+                                                            <td>
+                                                                <!-- <a class="px-3 btn btn-primary text-white" href="create-inspection.html">Create Inspection</a> -->
+                                                                <a class="px-3 btn btn-outline-primary" href="view-procurement.html">View</a>
+                                                            </td>
+                                                        </tr>
+
                                                     </tbody>
                                                 </table>
                                             </div>

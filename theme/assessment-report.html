@@ -170,9 +170,7 @@
                                         <li class="breadcrumb-item">
                                             <a href="index.html"> <i data-feather="home"></i></a>
                                         </li>
-                                        <li class="breadcrumb-item">Cars</li>
-                                        <li class="breadcrumb-item">Add Car</li>
-                                        <li class="breadcrumb-item active">Inspection</li>
+                                        <li class="breadcrumb-item">Assessment Report</li>
                                     </ol>
                                 </div>
                             </div>
@@ -181,64 +179,131 @@
                     <!-- Container-fluid starts-->
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-12">
                                 <div class="card">
-
                                     <div class="list-group-item badge-light b-r-7 mb-0 m-4 p-3">
                                         <div class="row">
-                                            <div class="col text-center"><h6 class="mb-0">MS002334</h6>ID</div>
-                                             <div class="col text-center"><h6 class="mb-0">Maruti</h6>Make</div>
-                                             <div class="col text-center"><h6 class="mb-0">Swift Dezire</h6>Car Name</div>
-                                              <div class="col text-center"><h6 class="mb-0">ZXI</h6>Variant</div>
-                                              <div class="col text-center"><h6 class="mb-0">2016</h6>Model</div>
-
-                                            
+                                            <div class="col text-center"><h6 class="mb-0">Assessment ID</h6>12345</div>
+                                            <div class="col text-center"><h6 class="mb-0">Procurement ID</h6>12345</div>
+                                            <div class="col text-center"><h6 class="mb-0">Make</h6>Maruti</div>
+                                            <div class="col text-center"><h6 class="mb-0">Model</h6>2016</div>
+                                            <div class="col text-center"><h6 class="mb-0">Variant</h6>ZXI</div>
+                                            <div class="col text-center"><h6 class="mb-0">Make Year</h6>2015</div>
                                         </div>
                                     </div>
-                                     <div class="text-center p-4 pb-1 pt-3">
-                                       
-                                       <button onclick="location.href = 'add-cars.html';" class="btn btn-outline-primary mb-1" type="button" ><i class="icofont icofont-car-alt-1 f-20 "></i></button>  
-                                       
-                                         
-                                <button onclick="location.href = 'add-images.html';" class="btn btn-outline-primary mb-1" type="button">+ Images</button>
-                                    <button onclick="location.href = 'add-price.html';" class="btn btn-outline-primary mb-1" type="button">+ Price</button>
-                                        <button onclick="location.href = 'add-vr.html';" class="btn btn-outline-primary mb-1" type="button" >+ VR</button>
-                                      
-                                             <button onclick="location.href = 'refurbhis.html';" class="btn btn-outline-primary mb-1" type="button">+ Refurbhis</button>
-                                               <button onclick="location.href = 'ShowroomOwnership.html';" class="btn btn-outline-primary mb-1" type="button">+ Showroom/Ownership</button>
-                                              <button onclick="location.href = 'inspection.html';" class="btn btn-outline-primary mb-1" type="button" disabled="">+ Inspection</button>
-                                            </div> 
+                                    <!-- <div class="card-header pt-3 pb-3 border-0">
+                                        <h5>Assessment Reports</h5>
+                                    </div> -->
 
-                                    
-                                     <div class="card-header pt-3 pb-3 border-0">
-                                        <h5>Inspection Details</h5>
-                                    </div>
-
-                                    
-
-                                     <div class="card-body pt-0">
-                                         <div class="row">
+                                    <div class="card-body pt-3">
+                                        
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <h5>Upload Assessment</h5>
+                                            </div>
                                             <div class="col-sm-12">
                                                 <div class="mb-4">
-                                                    <label class="form-label">Upload Inspection Details</label>
-                                                    <div class="dropzone dropzone-primary dz-clickable" id="multiFileUpload" action="/upload.php">
-                                                        <div class="dz-message needsclick">
-                                                            <i class="icon-cloud-up"></i>
-                                                            <h6>Drop files here or click to upload.</h6>
-                                                            <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                                                    <label class="form-label">Upload PDF/Image</label>
+                                                    <input class="form-control" type="file" name="fileupload[]" multiple="" class="" />
+                                                    <div class="align-items-end link-btn-wrapper text-right mt-3 d-flex justify-content-end align-items-sm-center">
+                                                        <div class="link-grp">
+                                                            <a href="javascript:void(0);" class="link-download me-2 text-decoration-underline">Download</a>
+                                                            <a href="javascript:void(0);" class="link-delete me-2 text-decoration-underline">Delete</a>
+                                                        </div>
+                                                        <div class="btn-grp">
+                                                            <button onclick="window.open('../assets/images/ecommerce/01.jpg','_blank')" class="btn btn-outline-primary btn-preview me-2 px-2" type="submit" data-bs-original-title="" title="">Preview</button>
+                                                            <button class="btn btn-primary btn-submit" type="submit" data-bs-original-title="" title="">Upload</button>
                                                         </div>
                                                     </div>
-                                                 
                                                 </div>
                                             </div>
-                                         
                                         </div>
 
-                                        <div class="col-12  text-right">
-                                            
-                                            
-                                            <button class="btn btn-primary text-white" type="button" data-bs-original-title="" title="">Save</button>
-                                        </div>
+                                        <form id="assessmentReportForm">
+                                            <div class="row">
+                                                <div class="col-12 mb-3">
+                                                    <h5>Assessment Reports</h5>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="body_shop">Body Shop</label>
+                                                        <textarea class="form-control" name="body_shop" id="body_shop" placeholder="Body Shop" cols="30" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="mechanical_electrical">Mechanical & Electrical</label>
+                                                        <textarea class="form-control" name="mechanical_electrical" id="mechanical_electrical" placeholder="Mechanical & Electrical" cols="30" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="accessories">Accessories</label>
+                                                        <textarea class="form-control" name="accessories" id="accessories" placeholder="Accessories" cols="30" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="tyres">Tyres</label>
+                                                        <textarea class="form-control" name="tyres" id="tyres" cols="30" rows="3" placeholder="Tyres"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="tantative_refurbishment_cost">Tantative Refurbisment Cost</label>
+                                                        <input type="text" class="form-control" name="tantative_refurbishment_cost" id="tantative_refurbishment_cost" placeholder="Tantative Refurbisment Cost" maxlength="255" value=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">Battery (OK/NOT OK)</label>
+                                                        <div class="media">
+                                                            <div class="media-body">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" name='status' value="2" checked><span class="switch-state"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">Spare Wheel (AVAILABLE/NOT AVAILABLE)</label>
+                                                        <div class="media">
+                                                            <div class="media-body">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" name='status' value="2" checked><span class="switch-state"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="">Tool Kit (AVAILABLE/NOT AVAILABLE)</label>
+                                                        <div class="media">
+                                                            <div class="media-body">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" name='status' value="2" checked><span class="switch-state"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="remarks">Remarks:</label>
+                                                        <textarea class="form-control" name="remarks" id="remarks" placeholder="Remarks." cols="30" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-12 mt-3 text-right">
+                                                    <button onclick="location.href = '#';" class="btn btn-primary text-white" type="button" data-bs-original-title="" title="">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
